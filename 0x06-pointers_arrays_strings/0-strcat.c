@@ -8,17 +8,16 @@
 
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest, src);
+	_strcat(dest, src);
 	return dest;
 }
-
 int main(void)
 {
 	char dest[100] = "Hello";
 	char src[] = "World";
 
-	char *result = _strcat(dest, src);
-	printf("%s\n", result);
+	char *resut = _strcat(dest, src);
+	prontf("%s\n", result);
 
-	return (0);
+	return(0);
 }
