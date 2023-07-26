@@ -8,16 +8,22 @@
 
 char *_strcat(char *dest, char *src)
 {
-	_strcat(dest, src);
-	return dest;
-}
-int main(void)
-{
-	char dest[100] = "Hello";
-	char src[] = "World";
+	int i;
+	int j;
 
-	char *resut = _strcat(dest, src);
-	prontf("%s\n", result);
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dst[i] = src[j];
+		i++;
+		j++;
+	}
 
-	return(0);
+	dest[i] = '\n';
+	return (dest);
 }
